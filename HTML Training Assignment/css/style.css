@@ -144,7 +144,8 @@ color: #FFFFFF;
 /* CSS3 - dashboard.html */
 .dashboard_page {
     display: grid;
-    grid-template-columns: 242px auto;  
+    grid-template-columns: 242px auto;
+    background-color: #FFFFFF;  
 }
 
 .dashboard_page .nav {
@@ -161,15 +162,19 @@ color: #FFFFFF;
 
 .dashboard_page .nav .nav_left {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    flex: 1 0 auto;
     width: 242px;
 }
 
-.dashboard_page .nav .nav_left .menubar {
-    width: 18px;
-    height: 12px;
+.dashboard_page .nav .nav_left .img_menubar {
+    width: 24px;
+    height: 24px;
+}
+
+.dashboard_page .nav .nav_left .img_header_logo {
+    width: 142px;
+    height: 30px;
 }
 
 .dashboard_page .nav .nav_middle {
@@ -178,9 +183,27 @@ color: #FFFFFF;
     justify-content: space-between;
 }
 
+.dashboard_page .nav .nav_middle .img_search {
+    width: 24px;
+    height: 24px;
+}
+
+.dashboard_page .nav .nav_middle .searchbox {
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-left: 4px;
+    border: none;
+    outline: none;
+}
+
+.dashboard_page .nav .nav_middle .img_alert {
+    width:22px;
+    height: 21px;
+}
+
 .dashboard_page .nav .nav_right {
     display: flex;
-    flex: 2 0 auto;
+    flex: 1 0 auto;
     justify-content: space-between;
-
 }
