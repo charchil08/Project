@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    }
+
+body {
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    opacity: 1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    cursor: pointer;
+}
+
+.landing_page {
+    max-width: 1560px;
+    min-height: 720px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex:1;
+}
+
+.hero_image {
+    box-shadow: 0px 4px 31px #0000000A;
+    border: 20px solid #FFFFFF;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.info .desc, .info .login {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+
+.info .desc  .header_image {
+    width: 252px;
+    height: 58px;
+    box-shadow: 0px 4px 31px #0000000A;
+}
+
+.info .desc  .header_desc {
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+}
+
+.info .desc .header_desc .line {
+    font: normal normal 300 40px/47px Roboto;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+
+.info .desc  .header_desc .line span {
+    color: #C8242F;
+}
+
+.info .desc p {
+    font: normal normal normal 25px/33px Roboto;
+}
+
+
+.info .login  input {
+    width: 429px;
+    height: 49px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;  
+    border-radius: 5px;
+    padding-left: 14.5px;
+}
+
+.info .login  input[type='text'] {
+    margin-bottom: 29px;
+}
+
+.info .login .button_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 429px;
+}
+
+.info .login .button_wrapper .btn_login {
+    width: 138px;
+    height: 45px;
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    margin-top: 30.5px;
+    margin-bottom: 23.13px;
+    font: normal normal medium 18px/24px Roboto;
+letter-spacing: 0px;
+color: #FFFFFF;
+}
+
+.info .login .button_wrapper p {
+    margin-top: auto;
+    margin-bottom: auto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+}
+
+.info .login .register {
+    display: flex;
+}
+
+
+.info .login .register p {
+    letter-spacing: 0px;
+    color: #ADADAD;
+    padding-right: 2px;
+}
+
+.info .login .register a {
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+}
+
+/* Note :
+1. change svg background to  #FAFAFA;
+*/
