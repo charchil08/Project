@@ -139,3 +139,48 @@ color: #FFFFFF;
 /* Note :
 1. change svg background to  #FAFAFA;
 */
+
+
+/* CSS3 - dashboard.html */
+.dashboard_page {
+    display: grid;
+    grid-template-columns: 242px auto;  
+}
+
+.dashboard_page .nav {
+    grid-column: auto / span 2    ;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    border: 1px solid red;
+}
+
+.dashboard_page .nav > * {
+    border: 1px solid blue;
+}
+
+.dashboard_page .nav .nav_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 auto;
+    width: 242px;
+}
+
+.dashboard_page .nav .nav_left .menubar {
+    width: 18px;
+    height: 12px;
+}
+
+.dashboard_page .nav .nav_middle {
+    display: flex;
+    flex: 8 0 auto;
+    justify-content: space-between;
+}
+
+.dashboard_page .nav .nav_right {
+    display: flex;
+    flex: 2 0 auto;
+    justify-content: space-between;
+
+}
