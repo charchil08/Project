@@ -20,6 +20,15 @@ img {
   cursor: pointer;
 }
 
+ul > li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .landing_page {
   max-width: 1560px;
   min-height: 720px;
@@ -291,7 +300,6 @@ img {
 /* sales-cards css */
 .dashboard_page .dashboard_content .sales_cards {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   /* display: grid;
@@ -331,4 +339,100 @@ img {
 .dashboard_page .dashboard_content .sales_cards .card_item img {
   width: 33px;
   height: 33px;
+}
+
+/* graph css */
+.dashboard_page .charts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard_page .charts .chart-item-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 802px;
+  height: 400px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+}
+
+.dashboard_page .charts .chart-item-1 .sale_wrapper {
+  width: 802px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 23px;
+}
+
+.dashboard_page .charts .chart-item-1 .sale_wrapper {
+  margin-left: 29px;
+}
+
+.dashboard_page .charts .chart-item-1 .sale_wrapper .list_items {
+  display: flex;
+  gap: 2.42px;
+  font: normal normal normal 12px/16px Roboto;
+  margin-right: 29px;
+}
+
+.dashboard_page .charts .chart-item-1 .sale_wrapper .list_items .active > a {
+  border-bottom: 1px solid #c8242f;
+  padding-bottom: 2px;
+  letter-spacing: 0px;
+  color: #c8242f;
+}
+
+.dashboard_page .charts .chart-item-2 {
+  display: flex;
+  flex-direction: column;
+  width: 385px;
+  height: 398px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+}
+
+.dashboard_page .charts .chart-item-2 h2 {
+  margin-left: 29px;
+  margin-top: 21.5px;
+}
+
+.dashboard_page .charts .chart-item-2 .countries {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: max-content;
+  row-gap: 18px;
+  column-gap: 26px;
+}
+.dashboard_page .charts .chart-item-2 .country {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard_page .charts .chart-item-2 .img_piegraph {
+  height: 237px;
+  width: 254px;
+  margin-left: 89px;
+}
+
+.dashboard_page .charts .chart-item-2 .countries .country .color {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 9px;
+}
+.dashboard_page .charts .chart-item-2 .countries .country .color_1 {
+  background-color: #c8242f;
+}
+.dashboard_page .charts .chart-item-2 .countries .country .color_2 {
+  background-color: #a2b86c;
+}
+.dashboard_page .charts .chart-item-2 .countries .country .color_3 {
+  background-color: #f16c20;
+}
+.dashboard_page .charts .chart-item-2 .countries .country .color_4 {
+  background-color: #ebc844;
 }
