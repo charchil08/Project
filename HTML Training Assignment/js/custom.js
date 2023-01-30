@@ -49,31 +49,31 @@ let salesCards = [
         img: './images/star.svg',
         number_of_products: 23456,
         desc: 'New Products',
-        img_class: 'img_new img',
+        img_class: 'img img_new ',
     },
     {
         img: './images/new-product.svg',
         number_of_products: 2345,
         desc: 'Added Products',
-        img_class: 'img_added img',
+        img_class: 'img img_added ',
     },
     {
         img: './images/total-product.svg',
         number_of_products: 32456,
         desc: 'Total Products',
-        img_class: 'img_total_products img',
+        img_class: 'img img_total_products ',
     },
     {
         img: './images/dollar-filled.svg',
         number_of_products: 5678,
         desc: "Today's Sale",
-        img_class: 'img_today img',
+        img_class: 'img img_today ',
     },
     {
         img: './images/money-bag.svg',
         number_of_products: 335342,
         desc: 'Total Sale',
-        img_class: 'img_total_sale img'
+        img_class: 'img img_total_sale '
     }
 ];
 
@@ -86,7 +86,7 @@ function arrangeSidebar() {
 
     for (let i = 0; i < menuItems.length; i++) {
         let div = document.createElement('div');
-        div.innerHTML = `<img class=${menuItems[i].className} src=${menuItems[i].src} alt=${menuItems[i].alt} /> <p>${menuItems[i].text}</p>`;
+        div.innerHTML = ` <p> <img class=${menuItems[i].className} src=${menuItems[i].src} alt=${menuItems[i].alt} /> ${menuItems[i].text}</p>`;
         div.classList.add('sidebar_item', `sidebar_item_${i + 1}`)
         sidebar.append(div);
     }

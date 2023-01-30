@@ -151,7 +151,7 @@ a {
   display: grid;
   grid-template-columns: 242px auto;
   background-color: #ffffff;
-  gap: 25px;
+  column-gap: 25px;
   max-width: 1560px;
   margin: auto;
 }
@@ -216,54 +216,43 @@ a {
 .dashboard_page .nav .nav_right {
   display: flex;
   flex: 1 0 auto;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
-.dashboard_page .nav .nav_right .img_profile {
-  width: 44px;
-  height: 44px;
+.nav_right > * {
+  padding-right: 8px;
 }
 
 .dashboard_page .nav .nav_right p {
-  width: 68px;
-  height: 21px;
   font: normal normal normal 16px/21px Roboto;
   letter-spacing: 0px;
+  align-self: baseline;
+  margin-top: auto;
+  margin-bottom: auto;
   color: #000000;
-}
-
-.dashboard_page .nav .nav_right .img_dropdown {
-  width: 20px;
-  height: 12px;
 }
 
 /* Sidebar css */
 .dashboard_page .sidebar {
-  display: flex;
-  flex-direction: column;
-  margin-left: 48px;
+  margin-left: 30px;
 }
 
-.dashboard_page .sidebar .sidebar_item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 19.97px;
-  width: 60px;
-  padding: 11px;
-  width: 183px;
-}
-
-.dashboard_page .sidebar .sidebar_item > img {
+.dashboard_page .sidebar .sidebar_item p img {
   width: 15px;
   height: 15px;
   margin-right: 12px;
 }
 
-.dashboard_page .sidebar .sidebar_item > p {
+.dashboard_page .sidebar .sidebar_item p {
   font: normal normal normal 16px/21px Roboto;
   letter-spacing: 0px;
   color: #3e3e3e;
+  width: 183px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
 }
 
 .dashboard_page .sidebar .sidebar_item_1 {
@@ -290,11 +279,10 @@ a {
   padding: 15.75px 0;
 }
 
-.dashboard_page .dashboard_content .dashboard_header {
+.dashboard_page .dashboard_content .dashboard_header h3 {
   font: normal normal medium 30px/39px Roboto;
   letter-spacing: 0px;
   color: #000000;
-  font-weight: 600;
 }
 
 /* sales-cards css */
@@ -395,7 +383,7 @@ a {
   border-radius: 5px;
 }
 
-.dashboard_page .charts .chart-item-2 h2 {
+.dashboard_page .charts .chart-item-2 h4 {
   margin-left: 29px;
   margin-top: 21.5px;
 }
@@ -407,7 +395,8 @@ a {
   row-gap: 18px;
   column-gap: 26px;
 }
-.dashboard_page .charts .chart-item-2 .country {
+
+.dashboard_page .charts .chart-item-2 .countries .country {
   display: flex;
   align-items: center;
 }
@@ -435,4 +424,72 @@ a {
 }
 .dashboard_page .charts .chart-item-2 .countries .country .color_4 {
   background-color: #ebc844;
+}
+
+.dashboard_page .dashboard_content .invoice {
+  background-color: #ffffff;
+}
+
+.dashboard_page .dashboard_content .invoice .heading {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 29px;
+  padding-right: 29px;
+}
+
+.dashboard_page .dashboard_content .invoice .heading h4 {
+  font: normal normal medium 22px/29px Roboto;
+  letter-spacing: 0px;
+  color: #3e3e3e;
+}
+
+.dashboard_page .dashboard_content .invoice .heading p a {
+  font: normal normal normal 12px/16px Roboto;
+  letter-spacing: 0px;
+  color: #c8242f;
+}
+
+.dashboard_page .dashboard_content .invoice .table-responsive {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.dashboard_page .dashboard_content .table th {
+  font: normal normal normal 15px/20px Roboto;
+  letter-spacing: 1.5px;
+  color: #adadad;
+}
+
+.dashboard_page
+  .dashboard_content
+  .invoice
+  .table-responsive
+  .table
+  tbody
+  tr
+  td {
+  font: normal normal normal 15px/20px Roboto;
+  letter-spacing: 0px;
+  color: #3e3e3e;
+}
+
+.dashboard_page .dashboard_content .table tbody tr td .text-success {
+  background-color: #ebffef;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.dashboard_page .dashboard_content .table tbody tr td .text-danger {
+  background-color: #fff5f5;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.dashboard_page .dashboard_content .table tbody tr td .text-secondary {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
