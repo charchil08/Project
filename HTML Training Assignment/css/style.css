@@ -658,12 +658,37 @@ a {
   margin-left: 50px;
 }
 
+.part-8 .row-1 {
+  margin-bottom: 25px;
+}
+
 .part-8 .col {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  height: 44px;
+  /* UI Properties */
+  border: 1px solid #ff3535;
+  color: #ff3535;
+  border-radius: 5px;
+  margin-right: 33px;
 }
 
-.part-8 .img_error {
+.part-8 img {
   width: 18px;
+}
+
+.part-8 .row-1 .col:nth-child(2) {
+  border: 1px solid #00b9e1;
+  color: #00b9e1;
+}
+
+.part-8 .row-2 .col:first-child {
+  border: 1px solid #ffa800;
+  color: #ffa800;
+}
+
+.part-8 .row-2 .col:nth-child(2) {
+  border: 1px solid #00af27;
+  color: #00af27;
 }
