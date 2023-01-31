@@ -573,7 +573,8 @@ a {
   flex-direction: column;
 }
 
-.part h4 {
+.part h4,
+.part-10 h5 {
   font: normal normal medium 22px/29px Roboto;
   letter-spacing: 0px;
   color: #3e3e3e;
@@ -654,7 +655,8 @@ a {
   color: #3e3e3e;
 }
 
-.part-6 .rd_btn:nth-child(3) {
+.part-6 .rd_btn:nth-child(3),
+.part-7 .chk_btn:nth-child(3) {
   margin-left: 50px;
 }
 
@@ -691,4 +693,84 @@ a {
 .part-8 .row-2 .col:nth-child(2) {
   border: 1px solid #00af27;
   color: #00af27;
+}
+
+.part-9 .btn_primary {
+  width: 124px;
+  height: 45px;
+  background: #c8242f 0% 0% no-repeat padding-box;
+  border-radius: 23px;
+
+  font: normal normal medium 18px/24px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.part-9 .btn_primary_outline {
+  width: 145px;
+  height: 44px;
+  border: 1px solid #c8242f;
+  border-radius: 22px;
+  color: #c8242f;
+  font-weight: 500;
+
+  margin-left: 25px;
+}
+
+.part-10 .tab_menu {
+  display: flex;
+  gap: 20px;
+}
+
+.tab {
+  padding-bottom: 10px;
+}
+
+.part-10 .tab_menu .tab.active_tab {
+  border-bottom: 2px solid #c8242f;
+  color: #c8242f;
+  width: 60px;
+  text-align: center;
+}
+
+.part-10 hr {
+  position: relative;
+  bottom: 10px;
+}
+
+.inner_page .sidebar .sidebar_item_1 p {
+  font: normal normal normal 16px/21px Roboto;
+  letter-spacing: 0px;
+  color: #3e3e3e;
+  width: 183px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+}
+
+.inner_page .sidebar .sidebar_item {
+  background-color: inherit;
+}
+
+.inner_page .sidebar .sidebar_item_2 {
+  background-color: #fff3f4;
+  border-radius: 5px;
+  font: normal normal normal 16px/21px Roboto;
+  letter-spacing: 0px;
+  cursor: pointer;
+}
+
+.inner_page .sidebar .sidebar_item_2 > p {
+  color: #c8242f;
+}
+
+.inner_page .sidebar .sidebar_item_1 p img {
+  filter: invert(24%) sepia(7%) saturate(94%) hue-rotate(314deg) brightness(88%)
+    contrast(90%);
+}
+
+.inner_page .sidebar .sidebar_item_2 p img {
+  filter: invert(22%) sepia(61%) saturate(3304%) hue-rotate(340deg)
+    brightness(87%) contrast(97%);
 }
