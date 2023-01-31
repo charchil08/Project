@@ -1,8 +1,8 @@
 /* CSS3 - dashboard.html */
-body {
-  /* overflow-x: hidden;
-  pointer-events: none; */
-}
+/* body {
+  overflow-x: hidden;
+  pointer-events: none;
+} */
 .dashboard_page {
   display: grid;
   grid-template-columns: 242px auto;
@@ -454,40 +454,41 @@ body {
   }
 
   .dashboard_page .charts .chart-item-1 {
-    width: 300px;
-    height: 300px;
+    width: 70%;
+    height: 400px;
     background-color: #ffffff;
   }
 
   .dashboard_page .charts .chart-item-1 .sale_wrapper {
     /* margin-left: 0; */
-    width: 400px;
+    width: 100%;
   }
 
   .dashboard_page .charts .chart-item-1 > img {
-    width: 535px;
+    width: 90%;
   }
 
   .dashboard_page .charts .chart-item-2 {
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
-    width: 550px;
+    width: 70%;
     padding-top: 8px;
     position: relative;
   }
 
-  .dashboard_page .charts .chart-item-2 > h4 {
-    position: absolute;
-    top: 0;
-  }
-
   .dashboard_page .charts .chart-item-2 .countries {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
   }
 
   .invoice .heading {
     padding: 0;
     padding-left: 10px;
+  }
+
+  .invoice .table {
+    display: block;
+    max-width: 70vw;
+    overflow-x: auto;
   }
 }
