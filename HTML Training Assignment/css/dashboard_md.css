@@ -506,18 +506,18 @@
   }
 }
 
-@media screen and (min-width: 424px) and (max-width: 767px) {
+@media screen and (min-width: 360px) and (max-width: 767px) {
   .nav {
     width: 100vw;
     flex-basis: 100%;
   }
 
   .nav_left {
-    width: 130px !important;
+    width: 30% !important;
   }
 
   .nav .nav_left .img_header_logo {
-    width: 80px !important;
+    width: 60px !important;
   }
 
   .nav .nav_middle {
@@ -535,6 +535,8 @@
 
   .searchbox {
     font: normal normal normal 12px/12px Roboto;
+    width: 30%;
+    margin-left: 4px;
   }
 
   .dashboard_page .nav .nav_middle input {
@@ -575,6 +577,56 @@
   }
 
   .sales_cards > * {
-    margin: 0;
+    margin: 0 !important;
+  }
+
+  .dashboard_page .charts {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .dashboard_page .charts .chart-item-1 {
+    width: 80%;
+    height: 250px;
+    background-color: #ffffff;
+  }
+
+  .dashboard_page .charts .chart-item-1 .sale_wrapper {
+    /* margin-left: 0; */
+    width: 100%;
+  }
+
+  .dashboard_page .charts .chart-item-1 > img {
+    width: 90%;
+  }
+
+  .dashboard_page .charts .chart-item-2 {
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: max-content;
+    padding-top: 8px;
+    position: relative;
+  }
+
+  .dashboard_page .charts .chart-item-2 .img_piegraph {
+    margin-left: 0;
+  }
+
+  .dashboard_page .charts .chart-item-2 .countries {
+    grid-template-columns: auto;
+  }
+
+  .invoice .heading {
+    padding: 0;
+    padding-left: 10px;
+  }
+
+  .invoice .table {
+    display: block;
+    max-width: 100vw;
+    overflow-x: auto;
   }
 }
