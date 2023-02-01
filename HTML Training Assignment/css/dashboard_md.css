@@ -95,6 +95,7 @@
 /* Sidebar css */
 .dashboard_page .sidebar {
   margin-left: 30px;
+  transition: all 1s;
 }
 
 .dashboard_page .sidebar .sidebar_item p img {
@@ -352,7 +353,19 @@
   padding-right: 8px;
 }
 
+/* Utility */
+.close {
+  display: none;
+  width: 0%;
+}
+
+.open {
+  /* width: 100vw; */
+  display: block;
+}
+
 /* MEDIA QUERY */
+
 @media screen and (1060px<=width<=1560px) {
   .dashboard_page {
     width: 100vw;
@@ -416,7 +429,7 @@
   }
 }
 
-@media screen and (width<=1060px) {
+@media screen and (768px<=width<=1060px) {
   .dashboard_page {
     width: 100vw;
     grid-template-columns: 165px auto;
@@ -490,5 +503,78 @@
     display: block;
     max-width: 70vw;
     overflow-x: auto;
+  }
+}
+
+@media screen and (min-width: 424px) and (max-width: 767px) {
+  .nav {
+    width: 100vw;
+    flex-basis: 100%;
+  }
+
+  .nav_left {
+    width: 130px !important;
+  }
+
+  .nav .nav_left .img_header_logo {
+    width: 80px !important;
+  }
+
+  .nav .nav_middle {
+    display: flex;
+    flex: 4 1 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-right: 8px;
+    justify-content: center !important;
+  }
+  .dashboard_page .nav .nav_middle .img_search {
+    width: 18px;
+    height: 18px;
+  }
+
+  .searchbox {
+    font: normal normal normal 12px/12px Roboto;
+  }
+
+  .dashboard_page .nav .nav_middle input {
+    font-size: 12px !important;
+  }
+
+  .dashboard_page .nav .nav_middle .img_alert {
+    width: 18px;
+    height: 18px;
+  }
+
+  .dashboard_page .nav .nav_right {
+    display: flex;
+    flex: 0 0 auto !important;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+  }
+
+  .nav_right > * {
+    padding-right: 4px;
+  }
+
+  .dashboard_page .nav .nav_right p {
+    display: none;
+  }
+
+  .dashboard_content {
+    padding-left: 0 !important;
+    width: 100vw;
+  }
+
+  .sales_cards {
+    grid-template-columns: auto !important;
+    margin: auto !important;
+    column-gap: 0 !important;
+    row-gap: 16px !important;
+  }
+
+  .sales_cards > * {
+    margin: 0;
   }
 }

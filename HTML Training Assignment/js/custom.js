@@ -79,6 +79,25 @@ let salesCards = [
 
 arrangeSidebar();
 arrangeSalesCards();
+responsiveSidebar();
+
+function responsiveSidebar() {
+    const hamburger = document.querySelector(".img_menubar");
+    const sidebar = document.querySelector(".sidebar");
+
+    hamburger.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (sidebar.classList.contains('close')) {
+            sidebar.classList.remove('close');
+            sidebar.classList.add('open');
+        } else {
+            sidebar.classList.remove('open');
+            sidebar.classList.add('close');
+        }
+    })
+
+}
+
 
 function arrangeSidebar() {
     const sidebar = document.querySelector('.sidebar');
